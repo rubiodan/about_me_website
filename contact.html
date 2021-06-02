@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Daniel</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header id="myHeader" class="alt">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="main">
+        <section id="contact_page">
+            <h1>Contact</h1>
+            <form action="/page_to_send_message" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" />
+                </div>
+                <div>
+                    <label for="msg">Mesage:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">send message</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="social-footer">
+        <div class="social-footer-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="mailto:blablabla@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/rubiodan"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
