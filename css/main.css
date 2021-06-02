@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
+body {
+    color: black;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14.5pt;
+    font-weight: 300;
+    line-height: 1.65;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    font-size: 15.5pt;
+
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    font-size: 15.5pt;
+
+}
+
+p {
+    margin: 1em;
+}
+
+/* Menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-transform: uppercase;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    /*lights where you are */
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: darkgray;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* images */
+#face1 {
+    display: block;
+    margin: auto;
+}
+
+#face2 {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.odd img {
+    float: left;
+    margin: 0 1em 1em 0;
+    shape-outside: ellipse(300px 300px at 50% 50%);
+}
+
+.even img {
+    float: right;
+    margin: 0 1em 1em 0;
+    shape-outside: ellipse(300px 300px at 50% 50%);
+}
+
+#parafuzo_icon {
+    display: none;
+    margin: 0 1em 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#parafuzo_large {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#keep_flying_large {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#poli_large {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#etec_large {
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+#kf_icon {
+    display: none;
+    margin: 0 1em 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#poli_icon {
+    display: none;
+    margin: 0 1em 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#etec_icon {
+    display: none;
+    margin: 0 1em 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer */
+
+.social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-footer ul {
+    list-style-type: none;
+}
+
+.social-footer li {
+    display: inline;
+}
+
+.social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: black;
+    margin: 1em;
+}
+
+/* contact */
+
+form {
+    margin: 0 auto;
+    /*center in page and more style*/
+    width: 375px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div+div {
+    margin-top: 1em;
+    /*some space between the fields*/
+}
+
+label {
+    /*give labels align and same size*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+.button {
+    /* button same size */
+    padding-left: 90px;
+}
+
+input:focus,
+textarea:focus {
+    /* focus ative elements */
+    border-color: #000;
+}
+
+textarea {
+    /* align labels and fiels*/
+    vertical-align: top;
+
+    /* give space to write*/
+    height: 5em;
+
+    /*let user to row field */
+    resize: vertical;
+}
+
+/* responsive part*/
+
+@media screen and (max-width: 421px) {
+
+    /* menu */
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* main */
+
+    body {
+        font-size: 14.5pt;
+        min-width: 370px;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+        font-size: 15.5pt;
+
+    }
+
+    #parafuzo_icon {
+        display: block;
+    }
+
+    #kf_icon {
+        display: block;
+    }
+
+    #parafuzo_big_image {
+        display: none;
+    }
+
+    #keep_flying_big_image {
+        display: none;
+    }
+
+    img {
+        float: none;
+        shape-outside: none;
+    }
+
+    #poli_icon {
+        display: block;
+    }
+
+    #poli_big_image {
+        display: none;
+    }
+
+    #etec_icon {
+        display: block;
+    }
+
+    #etec_big_image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1300px;
+        margin: auto;
+
+    }
+
+    #face1 {
+        display: none;
+    }
+
+    #face2 {
+        display: block;
+    }
+
+    .odd img {
+        float: none;
+        margin: auto;
+        shape-outside: none;
+    }
+
+    .even img {
+        float: none;
+        margin: auto;
+        shape-outside: none;
+    }
+
+    #parafuzo_big_image {
+        display: none;
+    }
+
+    #parafuzo_large {
+        display: block;
+    }
+
+    #keep_flying_big_image {
+        display: none;
+    }
+
+    #keep_flying_large {
+        display: block;
+    }
+
+    #poli_big_image {
+        display: none;
+    }
+
+    #poli_large {
+        display: block;
+    }
+
+    #etec_big_image {
+        display: none;
+    }
+
+    #etec_large {
+        display: block;
+    }
+}
